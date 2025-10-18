@@ -1,4 +1,4 @@
-### Study-of-basic-gates
+### study-of-basic-gates
 
 **AIM:** 
 
@@ -6,7 +6,7 @@ To study and verify the truth table of logic gates in Quartus II using Verilog p
 
 **Equipments Required:**
 
-Software – Quartus II
+Software – Quartus prime 
 
 **Theory**
 
@@ -63,42 +63,42 @@ Y= A⊕B
 
 
 **PROGRAM**
-
-module log_gat(a,b,c1,c2,c3,c4,c5,c6,c7);
-
+```
+Program for logic gates and verify its truth table in quartus using Verilog programming
+ Developed by:udhayanila s
+ RegisterNumber: 25018563
+ ```
+```
+module exp1(a,b,f1,f2,f3,f4,f5,f6,f7);
 input a,b;
-
-output c1,c2,c3,c4,c5,c6,c7;
-
-not g1(c1,a);
-
-and g2(c2,a,b);
-
-or g3(c3,a,b);
-
-nand g4(c4,a,b);
-
-nor g5(c5,a,b);
-
-xor g6(c6,a,b);
-
-xnor g7(c7,a,b);
-
+output f1,f2,f3,f4,f5,f6,f7;
+assign f1=a&b;
+assign f2=a|b;
+assign f3=~a;
+assign f4=~f1;
+assign f5=~f2;
+assign f6=a^b;
+assign f7=~(a^b);
 endmodule
+```
 
 **Logic symbol & Truthtable**
 
-![WhatsApp](https://github.com/user-attachments/assets/f8e1d24e-f9fa-4b4e-a36c-5536ad0845d9)
+![logic diagram](https://github.com/user-attachments/assets/11d6b227-e8ce-425b-9e42-faf0f90ac403)
+
 
 **RTL realization Output:** 
 
-![image](https://github.com/user-attachments/assets/f7523e61-fe89-4744-94f7-35ac974c8e37)
+![exp1](https://github.com/user-attachments/assets/cb08bdd4-25cf-4e78-9abd-c4d98eb0d5c7)
+
 
 **RTL**
 
-![image](https://github.com/user-attachments/assets/49b45e28-adef-4228-8ae6-bc6ac3dbe48c)
+![Exp1](https://github.com/user-attachments/assets/a475b1fc-6f6c-4df9-b933-000cd037bbab)
+
 
 **Result:**
 
- Thus the truth table of logic gates in Quartus II using Verilog programming is studied
- and verified successfully
+Thus the basic logic gates are studied and the truth tables are verified.
+
+
